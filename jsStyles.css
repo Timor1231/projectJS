@@ -1,0 +1,142 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #dbe0ea;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container box */
+.container {
+  background-color: white;
+  margin: 2em auto;
+  padding: 2em;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.count {
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 0.5em;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 1em;
+}
+
+.search .icon {
+  margin-left: 0.5em;
+}
+
+/* Action buttons on top */
+.top-buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Contact list */
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+.contact-name {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+/* Contact action buttons */
+.contact-buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.contact-buttons button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  margin-top: 2em;
+  color: #666;
+}
+
+
+
+
+.word-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-bottom: 1em;
+}
+
+.word-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
