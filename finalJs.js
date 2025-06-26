@@ -89,3 +89,31 @@ function renderContacts(contactArr) {
 
 // קורא לפונקציה ומציג את כל אנשי הקשר מיד כשנטען הדף
 renderContacts(contacts);
+
+
+// Handle click on info buttons (event delegation)
+document.querySelector('.contacts-list').addEventListener('click', function (e) {
+  if (e.target.textContent === 'ℹ️') {
+    const contactName = e.target.closest('li').querySelector('.contact-name').textContent;
+    const contact = contacts.find(c => c.name === contactName);
+
+    if (contact) {
+      document.getElementById('popupName').textContent = contact.name;
+      document.getElementById('popupPhone').textContent = contact.phone;
+      document.getElementById('popupImg').src = contact.image;
+      document.getElementById('popupOverlay').style.display = 'flex';
+    }
+  }
+});
+
+// Close popup with ❌
+document.getElementById('closePopup').addEventListener('click', function () {
+  document.getElementById('popupOverlay').style.display = 'none';
+});
+
+// Close popup by clicking outside the popup-window
+document.getElementById('popupOverlay').addEventListener('click', function (e) {
+  if (e.target.id === 'popupOverlay') {
+    e.target.style.display = 'none';
+  }
+});
